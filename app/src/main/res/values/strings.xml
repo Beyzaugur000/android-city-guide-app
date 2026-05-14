@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ProjectStaj_Beyzaugur</string>
+    <string-array name="sehirler">
+        <item>KONYA</item>
+        <item>BURSA</item>
+        <item>İZMİR</item>
+        <item>ANTALYA</item>
+        <item>ADANA</item>
+        <item>TEKİRDAĞ</item>
+        <item>MUĞLA</item>
+        <item>SİVAS</item>
+        <item>ANKARA</item>
+        <item>İSTANBUL</item>
+
+
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

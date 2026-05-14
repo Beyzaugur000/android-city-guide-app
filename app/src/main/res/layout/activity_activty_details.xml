@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4500AAD4"
+
+    tools:context=".ActivtyDetails">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutDetail"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        tools:ignore="ExtraText">
+
+
+        <ImageView
+            android:id="@+id/cityfoto"
+            android:layout_width="90dp"
+            android:layout_height="96dp"
+            app:srcCompat="@drawable/konya1" />
+
+        <TextView
+            android:id="@+id/basliktxt"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:layout_marginBottom="94dp"
+            android:background="@drawable/backgr"
+            android:paddingLeft="25dp"
+            android:paddingTop="25dp"
+            android:paddingRight="25dp"
+            android:text="KONYA"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/avmtxt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        /
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tarihitxt"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="231dp"
+        android:background="@drawable/gradientbackg"
+        android:minHeight="48dp"
+        android:paddingTop="10dp"
+        android:text="TARİHİ YERLER"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/unitxt"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:background="@drawable/gradientbackg"
+        android:minHeight="48dp"
+        android:paddingTop="10dp"
+        android:text="ÜNİVERSİTELER"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avmtxt" />
+
+    <TextView
+        android:id="@+id/avmtxt"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/gradientbackg"
+        android:minHeight="48dp"
+        android:paddingTop="10dp"
+        android:text="AVMLER"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tarihitxt" />
+
+    <TextView
+        android:id="@+id/hastanetxt"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:background="@drawable/gradientbackg"
+        android:minHeight="48dp"
+        android:paddingTop="10dp"
+        android:text="HASTANELER"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/unitxt" />
+
+    <Button
+        android:id="@+id/geribtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45dp"
+        android:text="Geri"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/fragmentContainerView"
+        android:name="com.example.projectstaj_beyzaugur.CityDetailFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
